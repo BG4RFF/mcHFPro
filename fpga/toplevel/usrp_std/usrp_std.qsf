@@ -1,0 +1,277 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic       
+# functions, and any output files any of the foregoing           
+# (including device programming or simulation files), and any    
+# associated documentation or information are expressly subject  
+# to the terms and conditions of the Altera Program License      
+# Subscription Agreement, Altera MegaCore Function License       
+# Agreement, or other applicable license agreement, including,   
+# without limitation, that your use is for the sole purpose of   
+# programming logic devices manufactured by Altera and sold by   
+# Altera or its authorized distributors.  Please refer to the    
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		usrp_std_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 3.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:14:04  JULY 13, 2003"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.0
+
+# Pin & Location Assignments
+# ==========================
+
+# Timing Assignments
+# ==================
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name CYCLONE_OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name STRATIX_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name APEX20K_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name TOP_LEVEL_ENTITY usrp_std
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name USER_LIBRARIES "e:\\usrp\\fpga\\megacells"
+set_global_assignment -name AUTO_ENABLE_SMART_COMPILE ON
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP1C6T144C8
+set_global_assignment -name CYCLONE_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name OPTIMIZE_TIMING "NORMAL COMPILATION"
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name IO_PLACEMENT_OPTIMIZATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL
+set_global_assignment -name INC_PLC_MODE OFF
+set_global_assignment -name ROUTING_BACK_ANNOTATION_MODE OFF
+set_instance_assignment -name IO_STANDARD LVTTL -to usbdata[12]
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD LVTTL
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+
+# Timing Analysis Assignments
+# ===========================
+set_global_assignment -name MAX_SCC_SIZE 50
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "<NONE>"
+set_global_assignment -name EDA_BOARD_DESIGN_TOOL "<NONE>"
+set_global_assignment -name EDA_FORMAL_VERIFICATION_TOOL "<NONE>"
+set_global_assignment -name EDA_RESYNTHESIS_TOOL "<NONE>"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name GENERATE_RBF_FILE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name START_TIME "0 ns"
+set_global_assignment -name GLITCH_INTERVAL "1 ns"
+
+# Design Assistant Assignments
+# ============================
+set_global_assignment -name DRC_REPORT_TOP_FANOUT OFF
+set_global_assignment -name DRC_REPORT_FANOUT_EXCEEDING OFF
+set_global_assignment -name ASSG_CAT OFF
+set_global_assignment -name ASSG_RULE_MISSING_FMAX OFF
+set_global_assignment -name ASSG_RULE_MISSING_TIMING OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_ASYN_RAM OFF
+set_global_assignment -name CLK_CAT OFF
+set_global_assignment -name CLK_RULE_COMB_CLOCK OFF
+set_global_assignment -name CLK_RULE_INV_CLOCK OFF
+set_global_assignment -name CLK_RULE_INPINS_CLKNET OFF
+set_global_assignment -name CLK_RULE_CLKNET_CLKSPINES OFF
+set_global_assignment -name CLK_RULE_MIX_EDGES OFF
+set_global_assignment -name RESET_CAT OFF
+set_global_assignment -name RESET_RULE_INPINS_RESETNET OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_COMB_ASYNCH_RESET OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name TIMING_CAT OFF
+set_global_assignment -name TIMING_RULE_SHIFT_REG OFF
+set_global_assignment -name TIMING_RULE_COIN_CLKEDGE OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_COMB_DRIVES_RAM_WE OFF
+set_global_assignment -name NONSYNCHSTRUCT_CAT OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_COMBLOOP OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_REG_LOOP OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_DELAY_CHAIN OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_RIPPLE_CLK OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_ILLEGAL_PULSE_GEN OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_MULTI_VIBRATOR OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_SRLATCH OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_LATCH_UNIDENTIFIED OFF
+set_global_assignment -name SIGNALRACE_CAT OFF
+set_global_assignment -name ACLK_CAT OFF
+set_global_assignment -name ACLK_RULE_NO_SZER_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_RULE_SZER_BTW_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_RULE_IMSZER_ADOMAIN OFF
+set_global_assignment -name HCPY_CAT OFF
+set_global_assignment -name HCPY_VREF_PINS OFF
+
+# SignalTap II Assignments
+# ========================
+set_global_assignment -name HUB_ENTITY_NAME SLD_HUB
+set_global_assignment -name HUB_INSTANCE_NAME SLD_HUB_INST
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+
+# LogicLock Region Assignments
+# ============================
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT OFF
+
+# -----------------
+# start CLOCK(SCLK)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name DUTY_CYCLE 50 -section_id SCLK
+set_global_assignment -name FMAX_REQUIREMENT "1 MHz" -section_id SCLK
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF -section_id SCLK
+
+# end CLOCK(SCLK)
+# ---------------
+
+# -----------------------
+# start CLOCK(master_clk)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name DUTY_CYCLE 50 -section_id master_clk
+set_global_assignment -name FMAX_REQUIREMENT "64 MHz" -section_id master_clk
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF -section_id master_clk
+
+# end CLOCK(master_clk)
+# ---------------------
+
+# -------------------
+# start CLOCK(usbclk)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name DUTY_CYCLE 50 -section_id usbclk
+set_global_assignment -name FMAX_REQUIREMENT "48 MHz" -section_id usbclk
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF -section_id usbclk
+
+# end CLOCK(usbclk)
+# -----------------
+
+# ----------------------
+# start ENTITY(usrp_std)
+
+	# Timing Assignments
+	# ==================
+set_instance_assignment -name CLOCK_SETTINGS SCLK -to SCLK
+set_instance_assignment -name CLOCK_SETTINGS usbclk -to usbclk
+set_instance_assignment -name CLOCK_SETTINGS master_clk -to master_clk
+
+# end ENTITY(usrp_std)
+# --------------------
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name VERILOG_FILE ../../megacells/fifo_4k_18.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/atr_delay.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cic_dec_shifter.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/rssi.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/ram16.v
+set_global_assignment -name VERILOG_FILE ../../megacells/fifo_4k.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/acc.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/mult.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/ram16_2sum.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/coeff_rom.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/halfband_decim.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/hb/mac.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/tx_chain.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/rx_dcoffset.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/adc_interface.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/io_pins.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/setting_reg.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/bidir_reg.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cic_int_shifter.v
+set_global_assignment -name VERILOG_FILE ../../megacells/clk_doubler.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/rx_chain.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/gen_sync.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/master_control.v
+set_global_assignment -name VERILOG_FILE ../../megacells/fifo_2k.v
+set_global_assignment -name VERILOG_FILE ../../megacells/bustri.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/rx_buffer.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/tx_buffer.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/phase_acc.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cic_interp.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cic_decim.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cordic_stage.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/cordic.v
+set_global_assignment -name VERILOG_FILE usrp_std.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/clk_divider.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/serial_io.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/strobe_gen.v
+set_global_assignment -name VERILOG_FILE ../../sdr_lib/sign_extend.v
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_42 -to FX2_1
+set_location_assignment PIN_37 -to FX2_2
+set_location_assignment PIN_48 -to FX2_3
+set_location_assignment PIN_1 -to MYSTERY_SIGNAL
+set_location_assignment PIN_17 -to SCLK
+set_location_assignment PIN_71 -to SDI
+set_location_assignment PIN_96 -to SDO
+set_location_assignment PIN_93 -to SEN_FPGA
+set_location_assignment PIN_92 -to master_clk
+set_location_assignment PIN_98 -to rx_a_a[11]
+set_location_assignment PIN_97 -to rx_a_a[10]
+set_location_assignment PIN_85 -to rx_a_a[9]
+set_location_assignment PIN_84 -to rx_a_a[8]
+set_location_assignment PIN_83 -to rx_a_a[7]
+set_location_assignment PIN_73 -to rx_a_a[0]
+set_location_assignment PIN_74 -to rx_a_a[1]
+set_location_assignment PIN_75 -to rx_a_a[2]
+set_location_assignment PIN_76 -to rx_a_a[3]
+set_location_assignment PIN_77 -to rx_a_a[4]
+set_location_assignment PIN_78 -to rx_a_a[5]
+set_location_assignment PIN_82 -to rx_a_a[6]
+set_location_assignment PIN_16 -to usbclk
+set_location_assignment PIN_58 -to usbctl[2]
+set_location_assignment PIN_60 -to usbctl[1]
+set_location_assignment PIN_61 -to usbctl[0]
+set_location_assignment PIN_38 -to usbdata[15]
+set_location_assignment PIN_39 -to usbdata[14]
+set_location_assignment PIN_40 -to usbdata[13]
+set_location_assignment PIN_41 -to usbdata[12]
+set_location_assignment PIN_49 -to usbdata[11]
+set_location_assignment PIN_50 -to usbdata[10]
+set_location_assignment PIN_51 -to usbdata[9]
+set_location_assignment PIN_52 -to usbdata[8]
+set_location_assignment PIN_53 -to usbdata[7]
+set_location_assignment PIN_57 -to usbdata[6]
+set_location_assignment PIN_59 -to usbdata[5]
+set_location_assignment PIN_67 -to usbdata[4]
+set_location_assignment PIN_68 -to usbdata[3]
+set_location_assignment PIN_69 -to usbdata[2]
+set_location_assignment PIN_70 -to usbdata[1]
+set_location_assignment PIN_72 -to usbdata[0]
+set_location_assignment PIN_110 -to usbrdy[1]
+set_location_assignment PIN_109 -to usbrdy[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

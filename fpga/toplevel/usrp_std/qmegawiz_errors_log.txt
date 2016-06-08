@@ -1,0 +1,6 @@
+
+
+C:/Projects/GitHub/fpga/usrp1/megacells/bustri.v
+
+May 07 06PM:18:39>: Megafunction LPM_BUSTRI is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
