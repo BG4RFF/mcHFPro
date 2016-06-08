@@ -1,11 +1,12 @@
-This fpga project is a fork from the Ettus Research USRP1 open source distribution. It is ported on smaller 144 LQFP part. 
-Conditional compiling is used, so only single channel, RX path is used. All extra pin connections for TX and daughterboards are
-commented out.
+This fpga project is a fork from the Ettus Research USRP1 open source distribution. 
+It is ported on smaller 144 LQFP part. Conditional compiling is used, 
+so only single channel, RX path is used. All extra pin connections for TX 
+and daughterboards are commented out.
 
 To compile:
 
 1. Install Quartus 2, v 11.00 Web Edition
-2. Go to topleve/usrp_std
+2. Go to toplevel/usrp_std
 3. Double click on usrp_std.qpf
 4. Use Cntr-L to rebuild
 
